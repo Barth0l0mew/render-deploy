@@ -12,7 +12,7 @@ WORKDIR /app
 COPY pom.xml .
 
 # Скачиваем зависимости (первый шаг сборки)
-RUN ./mvnw dependency:go-offline
+#RUN ./mvnw dependency:go-offline
 
 # Копируем остальные файлы проекта
 COPY src ./src
