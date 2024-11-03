@@ -7,6 +7,9 @@ WORKDIR /SpringDeployRender
 # Скопируйте файл сборки (например, pom.xml или build.gradle) в текущую директорию
 COPY pom.xml .
 
+COPY mvnw ./
+COPY .mvn ./.mvn
+RUN chmod +x mvnw
 # Скачиваем зависимости (первый шаг сборки)
 RUN ./mvnw dependency:go-offline
 
