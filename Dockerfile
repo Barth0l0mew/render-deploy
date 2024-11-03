@@ -2,7 +2,7 @@
 FROM openjdk:21-jdk-slim as build
 
 # Установите рабочую директорию
-WORKDIR /app
+WORKDIR /SpringDeployRender
 
 # Скопируйте файл сборки (например, pom.xml или build.gradle) в текущую директорию
 COPY pom.xml .
